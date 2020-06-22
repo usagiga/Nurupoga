@@ -17,7 +17,7 @@ $ go get github.com/usagiga/Nurupoga
 Make new app [here](https://discordapp.com/developers/applications).
 Then make new bot on the app.
 
-Open it on your browser, then authorize the app in all servers which you wanted to sync emojis.
+Open it on your browser, then authorize the app in all servers which you wanted to run it.
 
 ```
 https://discordapp.com/oauth2/authorize?&client_id=APP_CLIENT_ID_HERE&scope=bot&permissions=10240
