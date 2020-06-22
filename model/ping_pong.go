@@ -2,6 +2,7 @@ package model
 
 import (
 	"context"
+	"fmt"
 	"github.com/bwmarrin/discordgo"
 	"github.com/usagiga/Nurupoga/entity"
 	"github.com/usagiga/Nurupoga/infra"
@@ -30,7 +31,9 @@ func (m *PingPongModelImpl) WatchUpdatingMessage(ctx context.Context) (err error
 	var onUpdateMessage entity.OnUpdatedMessageHandler
 	onUpdateMessage = func(message string, ev *discordgo.MessageCreate, session *discordgo.Session) (err error) {
 		for _, alias := range m.config.Aliases {
-			if strings.Index(message, alias.Alias) != -1 {
+			aliasStr := fmt.Sprintf(";%s;", alias.Alias)
+
+			if strings.Index(message, aliasStr) != -1 {
 				// Reply
 				err = m.messageInfra.Reply(alias.Substance, ev, session)
 				if err != nil {

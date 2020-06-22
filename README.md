@@ -35,7 +35,7 @@ Put it on a directory as you like.
 ### 3. Launch
 
 Just run it on directory put `config.json` .
-If posted alias messages, Nurupoga send substance.
+If posted alias messages like `;foo;`, Nurupoga send substance.
 
 
 ## Dependencies
