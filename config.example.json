@@ -1,0 +1,9 @@
+{
+  "credential": {
+    "bot_token": "YOUR_DISCORD_BOT_TOKEN",
+    "guild_id": "YOUR_SERVER'S_ID"
+  },
+  "aliases": [
+    {"alias": "ALIAS_HERE", "substance": "SUBSTANCE_HERE"}
+  ]
+}
